@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBTL</title>
+  <link rel="icon" type="image/png" href="cbtllogo2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+ <a class="brand" aria-label="CBTL home">
+  <img src="cbtllogo2.png" alt="CBTL Logo">
+
+  <span class="brand-text">
+    <p>THE COFFEE BEAN & TEA LEAF</p>
+  </span>
+</a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#background">Background</a>
+    <a href="#problems">Problems</a>
+    <a href="#process">Process</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#about">About Me</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="hero">
+
+  <!-- Background Image -->
+  <img src="CBTL-2.jpg" alt="The Coffee Bean & Tea Leaf" class="hero-bg">
+
+  <!-- Dark / Purple Overlay -->
+  <div class="hero-overlay"></div>
+
+  <div class="hero-shape"></div>
+
+  <div class="hero-content">
+    <div class="eyebrow">SMM10703 • INNOVATIVE & CREATIVE SKILLS</div>
+
+    <h1>Creativity<br><em>& Innovation</em></h1>
+
+    <p class="hero-subtitle">
+      The Coffee Bean & Tea Leaf Malaysia
+    </p>
+
+    <a href="#background" class="btn">
+      Explore the Case Study <span>↓</span>
+    </a>
+  </div>
+
+</section>
+
+<!-- BACKGROUND -->
+<section id="background" class="section">
+  <div class="section-title">
+    <span>01</span>
+    <div><p>HOME — BACKGROUND</p><h2>About CBTL Malaysia</h2></div>
+  </div>
+
+  <div class="background-grid">
+    <div class="photo-card">
+      <div class="image-placeholder">
+        <small><img src="cbtllogo2.png" alt="Coffee Bean & Tea Leaf cafe"></small>
+      </div>
+      <div class="caption">The Coffee Bean & Tea Leaf Malaysia</div>
+    </div>
+
+    <div class="text-card">
+      <p>The Coffee Bean & Tea Leaf® is a café brand offering coffee, tea, beverages and food products. In Malaysia, the brand combines the traditional café experience with digital customer services.</p>
+      <p>As customer behaviour becomes increasingly digital, the <strong>MyCBTL App</strong> provides a digital platform for ordering, rewards, vouchers and café information.</p>
+      <div class="highlight-box">
+        <span>THE CASE STUDY FOCUS</span>
+        <strong>How digital innovation improves customer experience.</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-row">
+    <div><strong>☕</strong><span>Coffee</span></div>
+    <div><strong>🍵</strong><span>Tea</span></div>
+    <div><strong>📱</strong><span>Digital Experience</span></div>
+    <div><strong>🎁</strong><span>Rewards</span></div>
+  </div>
+</section>
+
+<!-- POPULAR DRINKS -->
+<div class="popular-section">
+
+  <div class="mini-title">
+    <span>POPULAR PICKS</span>
+    <h3>Customer Favourite Drinks</h3>
+  </div>
+
+  <div class="drink-carousel">
+
+    <button class="drink-arrow left" onclick="scrollDrinks(-1)">
+      &#10094;
+    </button>
+
+    <div class="drink-grid" id="drinkSlider">
+
+      <!-- DRINK 1 -->
+      <div class="drink-card">
+        <div class="drink-image">
+          <img src="otrseason.jpg" alt="OTR Season">
+        </div>
+
+        <div class="drink-info">
+          <span>01</span>
+          <h4>OTR SEASON</h4>
+          <p>
+            A refreshing seasonal drink featuring a smooth coffee base
+            with a choice of sweet Vanilla or rich Hazelnut flavour.
+          </p>
+        </div>
+      </div>
+
+      <!-- DRINK 2 -->
+      <div class="drink-card">
+        <div class="drink-image">
+          <img src="dryiceamericano.png" alt="Dry Ice Americano">
+        </div>
+
+        <div class="drink-info">
+          <span>02</span>
+          <h4>Dry Ice Americano</h4>
+          <p>
+            A bold and refreshing Americano topped with a smooth
+            Espresso Cream Crown, available in Vanilla or Hazelnut.
+          </p>
+        </div>
+      </div>
+
+      <!-- DRINK 3 -->
+      <div class="drink-card">
+        <div class="drink-image">
+          <img src="signature.webp" alt="Signature Coffee">
+        </div>
+
+        <div class="drink-info">
+          <span>03</span>
+          <h4>Signature Coffee</h4>
+          <p>
+            A smooth and satisfying coffee experience made for
+            customers who enjoy a rich and classic flavour.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="drink-arrow right" onclick="scrollDrinks(1)">
+      &#10095;
+    </button>
+
+  </div>
+
+</div>
+
+<!-- MANAGING DIRECTOR -->
+<div class="director-section">
+
+  <div class="director-image">
+    <img src="amarsyah.jfif" alt="Amar Syah">
+  </div>
+
+  <div class="director-content">
+    <p class="eyebrow">LEADERSHIP</p>
+    <h3>Amar Syah</h3>
+    <h4>Managing Director — The Coffee Bean & Tea Leaf Malaysia</h4>
+
+    <p>
+      Amar Syah represents the leadership behind The Coffee Bean & Tea Leaf
+      Malaysia, supporting the brand's growth and development in the Malaysian
+      café market.
+    </p>
+
+    <p>
+      His leadership reflects the brand's continued focus on delivering quality
+      products, strong customer experiences and adapting to changing consumer
+      needs through digital innovation.
+    </p>
+  </div>
+
+</div><br><br>
+
+<!-- PROBLEMS -->
+<section id="problems" class="section lavender">
+
+    <div class="section-title">
+        <span>02</span>
+
+        <div>
+            <p>THE PROBLEMS</p>
+            <h2>What Needs to Improve?</h2>
+        </div>
+    </div>
+
+
+    <p class="lead">
+        For this case analysis, the challenges focus on improving
+        the digital café experience by making ordering more convenient,
+        reducing confusion and helping customers manage busy café periods.
+    </p>
+
+
+    <div class="problem-grid">
+
+        <!-- PROBLEM 01 -->
+        <article class="problem-card">
+
+            <span class="card-no">01</span>
+
+            <div class="card-icon">☰</div>
+
+            <h3>Order Queue Crowded</h3>
+
+            <p>
+                Long queues during busy periods can make customers
+                spend more time waiting before placing their orders.
+            </p>
+
+            <label>QUEUE EXPERIENCE</label>
+
+        </article>
+
+
+        <!-- PROBLEM 02 -->
+        <article class="problem-card">
+
+            <span class="card-no">02</span>
+
+            <div class="card-icon">◉</div>
+
+            <h3>Peak Hour Congestion</h3>
+
+            <p>
+                Customers may not know how crowded a café is before
+                visiting, especially during peak hours.
+            </p>
+
+            <label>CAFÉ CONGESTION</label>
+
+        </article>
+
+
+        <!-- PROBLEM 03 -->
+        <article class="problem-card">
+
+            <span class="card-no">03</span>
+
+            <div class="card-icon">✓</div>
+
+            <h3>Order Mistakes</h3>
+
+            <p>
+                Multiple drink customisations can increase the risk
+                of incorrect orders and misunderstandings.
+            </p>
+
+            <label>ORDER ACCURACY</label>
+
+        </article>
+
+
+        <!-- PROBLEM 04 -->
+        <article class="problem-card">
+
+            <span class="card-no">04</span>
+
+            <div class="card-icon">✦</div>
+
+            <h3>Too Many Menu Choices</h3>
+
+            <p>
+                New customers may feel overwhelmed when choosing
+                from a wide range of coffee, tea and blended beverages.
+            </p>
+
+            <label>DECISION MAKING</label>
+
+        </article>
+
+    </div>
+
+
+    <!-- MAIN PROBLEM STATEMENT -->
+
+    <div class="question-box">
+
+        <small>MAIN PROBLEM STATEMENT</small>
+
+        <h3>
+            How can CBTL Malaysia use digital innovation to reduce
+            waiting time, manage café congestion, improve order accuracy
+            and help customers choose the right drink?
+        </h3>
+
+    </div>
+
+</section>
+
+<!-- PROCESS -->
+
+<section id="process" class="section dark">
+
+    <div class="section-title light">
+        <span>03</span>
+
+        <div>
+            <p>THE PROCESS OF IDENTIFYING SOLUTIONS</p>
+            <h2>From Problem to Idea</h2>
+        </div>
+    </div>
+
+
+    <div class="process-intro">
+        <p>
+            The innovation process begins by identifying common customer
+            difficulties at CBTL. These problems are then analysed and
+            transformed into practical digital features for a smarter
+            café experience.
+        </p>
+    </div>
+
+
+    <div class="process-line">
+
+        <!-- STEP 01 -->
+        <div class="process-step">
+            <span>01</span>
+
+            <h3>Identify</h3>
+
+            <p>
+                Identify common problems such as crowded queues,
+                peak-hour congestion, order mistakes and difficulty
+                choosing from the menu.
+            </p>
+        </div>
+
+
+        <!-- STEP 02 -->
+        <div class="process-step">
+            <span>02</span>
+
+            <h3>Understand</h3>
+
+            <p>
+                Understand how these problems affect customers'
+                time, convenience and overall café experience.
+            </p>
+        </div>
+
+
+        <!-- STEP 03 -->
+        <div class="process-step">
+            <span>03</span>
+
+            <h3>Analyse</h3>
+
+            <p>
+                Analyse which digital improvements can directly
+                reduce waiting, manage crowds, prevent mistakes
+                and simplify drink selection.
+            </p>
+        </div>
+
+
+        <!-- STEP 04 -->
+        <div class="process-step">
+            <span>04</span>
+
+            <h3>Ideate</h3>
+
+            <p>
+                Generate features such as a digital queue,
+                live crowd indicator, visual order confirmation
+                and AI drink recommendations.
+            </p>
+        </div>
+
+
+        <!-- STEP 05 -->
+        <div class="process-step">
+            <span>05</span>
+
+            <h3>Innovate</h3>
+
+            <p>
+                Combine the selected ideas into one integrated
+                digital solution: the MyCBTL App.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- IDEA BOARD -->
+
+    <div class="idea-board">
+
+        <div>
+            <span>PROBLEMS</span>
+
+            <b>
+                Queue • Crowding • Order Mistakes • Menu Confusion
+            </b>
+        </div>
+
+
+        <div class="plus">+</div>
+
+
+        <div>
+            <span>DIGITAL IDEAS</span>
+
+            <b>
+                Queue System • Live Crowd • Order Confirmation • AI Recommendation
+            </b>
+        </div>
+
+
+        <div class="plus">=</div>
+
+
+        <div class="idea-result">
+            <span>INNOVATION</span>
+
+            <b>MyCBTL App</b>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SOLUTIONS -->
+
+<section id="solutions" class="section">
+
+  <div class="section-title">
+    <span>04</span>
+    <div>
+      <p>THE SOLUTIONS</p>
+      <h2>Digital Innovation</h2>
+    </div>
+  </div>
+
+  <!-- =========================
+       SOLUTION 01
+       ========================= -->
+
+  <div class="solution-item">
+
+<div class="solution-problem">
+  <span>PROBLEM 01</span>
+  <h3>Order Queue Crowded</h3>
+  <p>
+    Long queues can make the ordering process uncomfortable,
+    especially when many customers arrive at the same time.
+  </p>
+</div>
+
+<div class="solution-main">
+
+  <!-- PHONE MOCKUP -->
+  <div class="phone-mockup">
+
+    <div class="phone-notch"></div>
+
+    <div class="app-screen">
+
+      <div class="app-status">
+        <span>9:41</span>
+        <span>● ● ▰</span>
+      </div>
+
+      <div class="app-header">
+        <span class="app-back">‹</span>
+        <div>
+          <small>MYCBTL</small>
+          <strong>Digital Queue</strong>
+        </div>
+      </div>
+
+      <div class="queue-card">
+
+        <small>YOUR QUEUE NUMBER</small>
+
+        <strong class="queue-number">A124</strong>
+
+        <p>You are <b>#4</b> in the queue</p>
+
+        <div class="queue-progress">
+          <span></span>
+        </div>
+
+        <div class="queue-info">
+          <div>
+            <small>EST. WAIT</small>
+            <b>8 min</b>
+          </div>
+
+          <div>
+            <small>COUNTER</small>
+            <b>02</b>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="queue-message">
+        🔔 We'll notify you when your order is ready.
+      </div>
+
+      <button class="app-btn">
+        VIEW QUEUE
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- SOLUTION TEXT -->
+  <div class="solution-text">
+
+    <p class="eyebrow brown">SOLUTION 01</p>
+
+    <h2>Digital Queue System</h2>
+
+    <p>
+      A digital queue system allows customers to join the queue
+      through the MyCBTL App without physically standing in line.
+      Customers can monitor their queue number and estimated
+      waiting time while waiting comfortably.
+    </p>
+
+    <div class="solution-benefit">
+      <span>✓</span>
+      <div>
+        <strong>Less Physical Queuing</strong>
+        <p>Customers can wait comfortably while monitoring their queue.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- =========================
+       SOLUTION 02
+       ========================= -->
+
+  <div class="solution-item reverse">
+
+<div class="solution-problem">
+  <span>PROBLEM 02</span>
+  <h3>Peak Hour Congestion</h3>
+  <p>
+    Cafés can become heavily crowded during peak hours,
+    resulting in longer waiting times and an uncomfortable
+    customer experience.
+  </p>
+</div>
+
+<div class="solution-main">
+
+  <!-- PHONE MOCKUP -->
+  <div class="phone-mockup">
+
+    <div class="phone-notch"></div>
+
+    <div class="app-screen">
+
+      <div class="app-status">
+        <span>9:41</span>
+        <span>● ● ▰</span>
+      </div>
+
+      <div class="app-header">
+        <span class="app-back">‹</span>
+        <div>
+          <small>MYCBTL</small>
+          <strong>Café Finder</strong>
+        </div>
+      </div>
+
+      <div class="crowd-map">
+
+        <div class="map-pin pin-one">📍</div>
+        <div class="map-pin pin-two">📍</div>
+        <div class="map-pin pin-three">📍</div>
+
+        <div class="map-road road-one"></div>
+        <div class="map-road road-two"></div>
+
+      </div>
+
+      <div class="crowd-card">
+
+        <div class="crowd-title">
+          <strong>CBTL Kangar</strong>
+          <span class="status-medium">MEDIUM</span>
+        </div>
+
+        <div class="crowd-bar">
+          <span></span>
+        </div>
+
+        <div class="crowd-details">
+          <span>👥 Current Crowd</span>
+          <b>Medium</b>
+        </div>
+
+        <div class="crowd-details">
+          <span>⏱ Waiting Time</span>
+          <b>12 min</b>
+        </div>
+
+      </div>
+
+      <button class="app-btn">
+        FIND LESS BUSY CAFÉ
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- SOLUTION TEXT -->
+  <div class="solution-text">
+
+    <p class="eyebrow brown">SOLUTION 02</p>
+
+    <h2>Live Crowd Indicator</h2>
+
+    <p>
+      A live crowd indicator displays the current crowd level
+      of each café. Customers can check whether a café is
+      busy before visiting and choose a less crowded location
+      when necessary.
+    </p>
+
+    <div class="solution-benefit">
+      <span>✓</span>
+      <div>
+        <strong>Better Visit Planning</strong>
+        <p>Customers can avoid busy periods and crowded cafés.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+  </div>
+
+  <!-- =========================
+       SOLUTION 03
+       ========================= -->
+
+  <div class="solution-item">
+
+<div class="solution-problem">
+  <span>PROBLEM 03</span>
+  <h3>Order Mistakes</h3>
+  <p>
+    Multiple customisation options can increase the possibility
+    of incorrect orders, especially when customers select
+    several drink preferences.
+  </p>
+</div>
+
+<div class="solution-main">
+
+  <!-- PHONE MOCKUP -->
+  <div class="phone-mockup">
+
+    <div class="phone-notch"></div>
+
+    <div class="app-screen">
+
+      <div class="app-status">
+        <span>9:41</span>
+        <span>● ● ▰</span>
+      </div>
+
+      <div class="app-header">
+        <span class="app-back">‹</span>
+        <div>
+          <small>MYCBTL</small>
+          <strong>Review Order</strong>
+        </div>
+      </div>
+
+      <div class="drink-preview">
+
+        <div class="drink-cup">
+          <div class="coffee-top"></div>
+          <div class="cup-body"></div>
+        </div>
+
+        <strong>Caramel Latte</strong>
+        <small>Regular · Hot</small>
+
+      </div>
+
+      <div class="order-details">
+
+        <div>
+          <span>Size</span>
+          <b>Regular</b>
+        </div>
+
+        <div>
+          <span>Temperature</span>
+          <b>Hot</b>
+        </div>
+
+        <div>
+          <span>Sugar</span>
+          <b>50%</b>
+        </div>
+
+        <div>
+          <span>Milk</span>
+          <b>Fresh Milk</b>
+        </div>
+
+        <div>
+          <span>Extra</span>
+          <b>Caramel</b>
+        </div>
+
+      </div>
+
+      <button class="confirm-btn">
+        ✓ CONFIRM ORDER
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- SOLUTION TEXT -->
+  <div class="solution-text">
+
+    <p class="eyebrow brown">SOLUTION 03</p>
+
+    <h2>Visual Order Confirmation</h2>
+
+    <p>
+      Before payment, customers receive a visual summary of
+      their selected drink, size, temperature, sugar level and
+      customisation. This gives customers one final opportunity
+      to check their order before confirming it.
+    </p>
+
+    <div class="solution-benefit">
+      <span>✓</span>
+      <div>
+        <strong>Fewer Order Errors</strong>
+        <p>Customers can review every customisation before payment.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- =========================
+       SOLUTION 04
+       ========================= -->
+
+  <div class="solution-item reverse">
+
+<div class="solution-problem">
+  <span>PROBLEM 04</span>
+  <h3>Too Many Menu Choices</h3>
+  <p>
+    New customers may feel overwhelmed by the large number
+    of drinks and customisation options available.
+  </p>
+</div>
+
+<div class="solution-main">
+
+  <!-- PHONE MOCKUP -->
+  <div class="phone-mockup">
+
+    <div class="phone-notch"></div>
+
+    <div class="app-screen">
+
+      <div class="app-status">
+        <span>9:41</span>
+        <span>● ● ▰</span>
+      </div>
+
+      <div class="app-header">
+        <span class="app-back">‹</span>
+        <div>
+          <small>MYCBTL</small>
+          <strong>AI Recommendation</strong>
+        </div>
+      </div>
+
+      <div class="ai-question">
+        <span>✦ AI BARISTA</span>
+        <h3>What are you<br>in the mood for?</h3>
+      </div>
+
+      <div class="taste-options">
+
+        <button>☕ Strong</button>
+        <button>🍫 Sweet</button>
+        <button>🥛 Creamy</button>
+        <button>🍃 Refreshing</button>
+
+      </div>
+
+      <div class="ai-result">
+
+        <small>BEST MATCH FOR YOU</small>
+
+        <div class="ai-drink">
+
+          <div class="mini-cup">
+            <div></div>
+          </div>
+
+          <div>
+            <strong>Caramel Macchiato</strong>
+            <span>95% Match</span>
+          </div>
+
+        </div>
+
+        <button class="recommend-btn">
+          ADD TO ORDER
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SOLUTION TEXT -->
+  <div class="solution-text">
+
+    <p class="eyebrow brown">SOLUTION 04</p>
+
+    <h2>AI Drink Recommendation</h2>
+
+    <p>
+      An AI-powered recommendation feature helps customers
+      choose drinks based on their taste preferences. Instead
+      of browsing the entire menu, customers can answer a few
+      simple questions and receive a personalised recommendation.
+    </p>
+
+    <div class="solution-benefit">
+      <span>✓</span>
+      <div>
+        <strong>Easier Decision Making</strong>
+        <p>Customers can quickly discover drinks that match their taste.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section id="benefits" class="section lavender">
+
+  <div class="section-title">
+    <span>05</span>
+    <div>
+      <p>THE BENEFITS OF THE SOLUTIONS</p>
+      <h2>Why It Matters</h2>
+    </div>
+  </div>
+
+  <!-- CUSTOMER BENEFITS -->
+
+  <h3 class="subheading">Benefits to Customers</h3>
+
+  <div class="benefit-grid">
+<article>
+  <div>⏱</div>
+  <h3>Less Waiting Time</h3>
+  <p>
+    Digital queueing allows customers to join and monitor
+    their queue without standing in a crowded line.
+  </p>
+</article>
+
+<article>
+  <div>📍</div>
+  <h3>Better Visit Planning</h3>
+  <p>
+    Live crowd information helps customers choose a suitable
+    café and avoid busy periods.
+  </p>
+</article>
+
+<article>
+  <div>✓</div>
+  <h3>Fewer Order Mistakes</h3>
+  <p>
+    Visual order confirmation allows customers to review
+    their drink customisation before placing the order.
+  </p>
+</article>
+
+<article>
+  <div>✦</div>
+  <h3>Easier Decisions</h3>
+  <p>
+    AI drink recommendations help customers quickly discover
+    drinks that match their preferences.
+  </p>
+</article>
+
+  </div>
+
+  <!-- ORGANIZATION BENEFITS -->
+
+  <h3 class="subheading">Benefits to the Organization</h3>
+
+  <div class="org-benefits">
+
+<div>
+  <span>01</span>
+  <h3>Better Queue Management</h3>
+  <p>
+    Digital queueing helps organize customer flow and reduce
+    physical congestion around ordering areas.
+  </p>
+</div>
+
+<div>
+  <span>02</span>
+  <h3>Improved Peak-Hour Flow</h3>
+  <p>
+    Crowd information can help distribute customers across
+    different cafés and reduce pressure during busy periods.
+  </p>
+</div>
+
+<div>
+  <span>03</span>
+  <h3>Reduced Order Errors</h3>
+  <p>
+    Visual confirmation gives customers an opportunity to
+    correct customisation details before the order is submitted.
+  </p>
+</div>
+
+<div>
+  <span>04</span>
+  <h3>Smarter Customer Experience</h3>
+  <p>
+    AI recommendations make menu discovery easier while
+    creating a more personalized digital experience.
+  </p>
+</div>
+  </div>
+
+  <!-- IMPACT -->
+
+  <div class="benefit-statement">
+
+<span>THE IMPACT</span>
+
+<strong>
+  Faster + Smarter + Accurate + Personalized
+</strong>
+
+  </div>
+
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="section about">
+  <div class="section-title">
+    <span>06</span>
+    <div><p>ABOUT ME</p><h2>Student Profile</h2></div>
+  </div>
+
+  <div class="about-card">
+ 
+    <div class="avatar">
+        <img src="profilepicture.jpg" alt="Nur Syaza">
+    </div>
+<div>
+    <p class="eyebrow brown">INDIVIDUAL ASSIGNMENT</p>
+
+    <h2>Nur Syaza binti Abd Rahman</h2>
+
+    <p>Bachelor of Interactive Media Technology with Honours</p>
+    <p class="muted">SMM10703 Innovative and Creative Skills</p>
+
+    <div class="personal-info">
+
+        <p>
+            <strong>Phone</strong>
+            <span>011-53641412</span>
+        </p>
+
+        <p>
+            <strong>Email</strong>
+            <span>nrsyzrhmn1412@gmail.com</span>
+        </p>
+
+        <p>
+            <strong>Address</strong>
+            <span>Based in Selangor, Malaysia</span>
+        </p>
+
+        <p>
+            <strong>Date of Birth</strong>
+            <span>December 14th, 2003</span>
+        </p>
+
+    </div>
+
+    <div class="quote">
+        <span>FAVOURITE QUOTE</span>
+        <p>"What is meant to be will always find its way."</p>
+    </div>
+
+</div>
+  </div>
+
+  <!-- CONCLUSION -->
+<section id="conclusion" class="section conclusion-section">
+
+  <div class="section-title">
+    <span>07</span>
+    <div>
+      <p>CONCLUSION</p>
+      <h2>Final Thoughts</h2>
+    </div>
+  </div>
+
+  <div class="conclusion-grid">
+
+    <div class="conclusion-card">
+      <span>01</span>
+      <p>
+        This case study shows that creativity and innovation can be
+        used to improve existing café services and customer experiences.
+      </p>
+    </div>
+
+    <div class="conclusion-card">
+      <span>02</span>
+      <p>
+        Identifying real customer problems is important before
+        developing a suitable and effective digital solution.
+      </p>
+    </div>
+
+    <div class="conclusion-card">
+      <span>03</span>
+      <p>
+        The MyCBTL App provides practical solutions for reducing
+        waiting time and improving the overall ordering process.
+      </p>
+    </div>
+
+    <div class="conclusion-card">
+      <span>04</span>
+      <p>
+        Digital features such as queue management and order
+        confirmation can create a smoother and more accurate
+        customer experience.
+      </p>
+    </div>
+
+    <div class="conclusion-card">
+      <span>05</span>
+      <p>
+        Personalised digital features, such as AI drink recommendations,
+        can make menu selection easier and more engaging for customers.
+      </p>
+    </div>
+
+    <div class="conclusion-card">
+      <span>06</span>
+      <p>
+        Overall, continuous innovation can help CBTL Malaysia respond
+        to changing customer needs and deliver a smarter, more
+        convenient café experience.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+  <div class="reflection">
+    <p class="eyebrow brown">PERSONAL REFLECTION</p>
+    <h3>What I learned from this case study</h3>
+    <p>I learned that innovation does not always mean creating a completely new product. It can also mean improving an existing service to make it more convenient and valuable for customers. This case study helped me understand the importance of identifying a real problem before developing a creative solution.</p>
+  </div>
+<!-- SOCIAL CONNECT -->
+<div class="connect-section">
+
+    <p class="eyebrow brown">LET'S CONNECT WITH ME</p>
+
+    <div class="social-links">
+
+        <a href="https://pin.it/4jXaeFnAl" class="social-card pinterest" target="_blank">
+            <i class="fa-brands fa-pinterest-p"></i>
+            <div>
+                <strong>Pinterest</strong>
+                <span>Creative inspiration</span>
+            </div>
+            <b>↗</b>
+        </a>
+
+        <a href="https://www.tiktok.com/@swytneys?lang=en" class="social-card tiktok" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+            <div>
+                <strong>TikTok</strong>
+                <span>Short videos & ideas</span>
+            </div>
+            <b>↗</b>
+        </a>
+
+        <a href="https://www.instagram.com/syaxsr/" class="social-card instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+                <strong>Instagram</strong>
+                <span>Creative moments</span>
+            </div>
+            <b>↗</b>
+        </a>
+
+    </div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-brand"><span class="brand-mark">CB</span><div><b>CBTL</b><small>COFFEE & TEA</small></div></div>
+  <p>Creativity & Innovation Case Study • The Coffee Bean & Tea Leaf Malaysia</p>
+  <p class="copyright">© 2026 Nur Syaza binti Abd Rahman</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
